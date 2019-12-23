@@ -9,6 +9,7 @@
     while(num){
     if(num%z==0 && !(num>=x && num<=y)){
     printf("%d",num);
+    break;
     }
     num++;
     }
