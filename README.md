@@ -21,7 +21,7 @@
     }}
     }
     
-    
+
 ## DC - 23-12-2019 (Smallest Integer in C)
     #include<stdio.h>
     int main(){
