@@ -1,4 +1,41 @@
 ## Daily Challenges
+
+## DC - 25-12-2019(Update the time)
+    #include<stdio.h>
+    #include <stdlib.h>
+    int main(){
+    long long int x,y,k;
+    scanf("%lld:%lld",&x,&y);
+    scanf("%lld",&k);
+    while(k>0)
+    {
+        y++;
+        if(y==60)
+        {
+            y=0;
+            x++;
+            if(x==24)
+            {
+                x=0;
+            }
+        }
+        k--;
+    }
+    if(x<10){ 
+    printf("0%d:",x);
+    }
+    else{
+        printf("%d:",x);
+    }
+    if(y<10){
+        printf("0%d",y);
+    }
+    else{
+        printf("%d",y);
+        }
+    }
+
+
 ## DC - 24-12-2019 (Repeat First/Last X)
     #include<stdio.h>
     int main(){
