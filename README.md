@@ -1,5 +1,27 @@
 ## Daily Challenges
 
+## DC - 26-12-2019 (Print N characters clockwise)
+    #include<stdio.h>
+    #include <stdlib.h>
+    int main(){
+        int num,ctr=1,i=0;
+        scanf("%d",&num);
+        char ch[]="abcd";
+        while(ctr<=num)
+        {
+             printf("%c",ch[i]);
+             if(i==strlen(ch)-1)
+                 i=0;
+             else
+                 i++;
+             ctr++;
+         }}
+         
+   Input : 5
+   
+   Output : abcda 
+   
+   
 ## DC - 25-12-2019(Update the time)
     #include<stdio.h>
     #include <stdlib.h>
