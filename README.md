@@ -22,7 +22,7 @@
    Output : abcda 
    
    
-## DC - 25-12-2019(Update the time)
+## DC - 25-12-2019 (Update the time)
     #include<stdio.h>
     #include <stdlib.h>
     int main(){
