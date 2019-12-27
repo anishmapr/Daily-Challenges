@@ -22,6 +22,7 @@
 		}
 		System.out.print(sum+"-");
 	}}
+	
    Input : 100100
    
    Output : 200
