@@ -1,5 +1,32 @@
 ## Daily Challenges
 
+## DC - 27-12-2019 (Sum of three digits in number)
+    import java.util.*;
+    public class Hello {
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.next();
+		int c=0,sum=0;
+		String x="";
+		for(int i=0;i<s.length();i++) {
+		    if(c!=3) {
+		        x+=s.charAt(i);
+		        c++;
+		    }
+		    if(c==3) {
+		        int n=Integer.parseInt(x);
+		        sum+=n;
+		        x="";
+		        c=0;
+		    }
+		}
+		System.out.print(sum+"-");
+	}}
+   Input : 100100
+   
+   Output : 200
+    
+    
 ## DC - 26-12-2019 (Print N characters clockwise)
     #include<stdio.h>
     #include <stdlib.h>
