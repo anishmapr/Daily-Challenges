@@ -1,5 +1,23 @@
 ## Daily Challenges
-
+## DC - 28-12-2017 (Remove Brackets)
+    #include<stdio.h>
+    #include <stdlib.h>
+    int main(){
+         char str[1000];
+         scanf("%s",str);
+	 int len=strlen(str);
+         for(int index=0;index<len;index++) {
+             if(str[i]!='[' && str[i]!=']' && str[i]!='(' && str[i]!=')' && str[i]!='{' && str[i]!='}') {
+	           printf("%c",str[i]);
+             }
+        }}
+	
+	
+   Input : De(v)o{i}d
+  
+   Output : Devoid
+        
+   
 ## DC - 27-12-2019 (Sum of three digits in number)
     import java.util.*;
     public class Hello {
