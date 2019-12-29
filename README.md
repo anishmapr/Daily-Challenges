@@ -1,4 +1,31 @@
 ## Daily Challenges
+## DC - 29-12-2017 (getNumberOfBinaryOnes in Integer)
+    #include<stdio.h>
+    #include <stdlib.h>
+    int getNumberOfBinaryOnes(int N) {
+        int count = 0; 
+        while(N>0) {
+	    count += (N%2);
+	    N /= 2;
+	    }
+	    return count;
+    }
+    int main()
+    {
+      int num1,num2;
+	  scanf("%d %d",&num1,&num2);
+	  int N = num1^num2;
+	  printf("%d",getNumberOfBinaryOnes(N));
+    }
+	
+  Input = 15 0
+  
+  Output = 4
+  
+  Explanation : num1 = 15 ; num2 = 0 ; N = (15^0) = (1111 ^ 0000) = (1111) = 15
+                ; number of ones in binary 15(1111) = 4.
+		
+		
 ## DC - 28-12-2017 (Remove Brackets)
     #include<stdio.h>
     #include <stdlib.h>
