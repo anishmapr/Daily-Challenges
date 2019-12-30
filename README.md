@@ -1,4 +1,43 @@
-## Daily Challenges
+## Daily Challenges 
+## DC - 30-12-2017 (password validation) 
+     #include<stdio.h> 
+     #include<stdlib.h>  
+     int valid(char c,char* user) { 
+     for(int index=0;index<strlen(user);index++){ 
+     if(user[index]==c){ 
+     return 0; 
+     }  
+     }
+     return 1; 
+     }
+     int main() { 
+     char user[1000],pass[1000];  
+     scanf("%s\n%s",user,pass);
+     int len=strlen(pass); 
+     for(int index=0;index<len;index++) { 
+     if(valid(pass[i],user)==0) {  
+     flag=1;
+     printf("INVALID"); 
+     break;
+     } 
+     } 
+     if(f==1){ 
+     printf("VALID"); 
+     } 
+     } 
+      
+      
+  Input :   
+  
+  cratmates 
+  
+  123@2000 
+	     
+  Output : VALID 
+  
+  Explanation : If password contains username characters print invalid else valid
+     
+     
 ## DC - 29-12-2017 (getNumberOfBinaryOnes in Integer)
     #include<stdio.h>
     #include <stdlib.h>
