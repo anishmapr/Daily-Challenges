@@ -1,4 +1,28 @@
-## Daily Challenges 
+## Daily Challenges
+## Happy new year guys!!! 
+## DC - 01-01-2020 (Sum of odd digit numbers) 
+    #include<stdio.h> 
+    int main() { 
+    int num,size,sum=0; 
+    scanf("%d",&size); 
+    for(int i=0;i<size;i++){ 
+        scanf("%d",&num);  
+        int count=log10(num)+1; 
+        if(count%2!=0)
+             sum+=num; 
+    } }
+	
+   Input :  
+   
+   4 
+    
+   10 200 300 4000 
+    
+   Output : 500
+      
+   Explanation : odd digit count numbers are 200 and 300 so the sum is 500
+	
+	
 ## DC - 31-12-2019 (Left Right Pattern)
     #include <stdio.h>
     #include<string.h>
