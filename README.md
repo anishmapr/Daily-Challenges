@@ -10,7 +10,9 @@
         int count=log10(num)+1; 
         if(count%2!=0)
              sum+=num; 
-    } }
+    } 
+    printf("%d",sum); 
+    }
 	
    Input :  
    
