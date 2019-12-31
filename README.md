@@ -1,5 +1,63 @@
 ## Daily Challenges 
-## DC - 30-12-2017 (password validation) 
+## DC - 31-12-2019 (Left Right Pattern)
+    #include <stdio.h>
+    #include<string.h>
+    int main(){
+    char s[1000];
+    scanf("%s",s);
+    int len = strlen(s);
+    int n=len,flag = 0,x=0,y=len;
+    if(n%2==0)
+    {
+        n=n-1;
+    }
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<x;j++)
+        {
+            printf("#");
+        }
+        for(int j=x;j<y;j++)
+        {
+            printf("%c",s[j]);
+        }
+        for(int j=len-1;j>=y;j--)
+        {
+            printf("#");
+        }
+        if((x==len/2 && len % 2!=0)||(x==(len/2)-1 && len%2==0))
+        {
+            flag = 1;
+        }
+        if(flag==1)
+        {
+            x--;
+            y++;
+        }
+        if(flag==0)
+        {
+            x++;
+            y--;
+        }
+        printf("\n");
+    }}
+
+Input : logics
+
+Output:
+
+   logics
+   
+   #ogic#
+   
+   ##gi##
+   
+   #ogic#
+   
+   logics
+
+
+## DC - 30-12-2019 (password validation) 
      #include<stdio.h> 
      #include<stdlib.h>  
      int valid(char c,char* user) { 
@@ -38,7 +96,7 @@
   Explanation : If password contains username characters print invalid else valid
      
      
-## DC - 29-12-2017 (getNumberOfBinaryOnes in Integer)
+## DC - 29-12-2019 (getNumberOfBinaryOnes in Integer)
     #include<stdio.h>
     #include <stdlib.h>
     int getNumberOfBinaryOnes(int N) {
@@ -65,7 +123,7 @@
                 ; number of ones in binary 15(1111) = 4.
 		
 		
-## DC - 28-12-2017 (Remove Brackets)
+## DC - 28-12-2019 (Remove Brackets)
     #include<stdio.h>
     #include <stdlib.h>
     int main(){
