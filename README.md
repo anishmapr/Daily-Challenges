@@ -1,7 +1,8 @@
 ## Daily Challenges
 ## Happy new year guys!!! 
 ## DC - 01-01-2020 (Sum of odd digit numbers) 
-    #include<stdio.h> 
+    #include<stdio.h>  
+    #include<math.h>
     int main() { 
     int num,size,sum=0; 
     scanf("%d",&size); 
