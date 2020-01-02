@@ -1,5 +1,35 @@
 ## Daily Challenges
-## Happy new year guys!!! 
+## DC - 02-01-2020 (Alternate 1s ans 0s decimal equivalent) 
+    #include<stdio.h> 
+    #include<stdlib.h> 
+    #include<math.h> 
+    int main() { 
+    long long int num,ctr,dec=0,count; 
+    scanf("%lld",&num); 
+    if(num&1) { 
+    count = (num/2)+1; 
+    ctr=0; 
+    } 
+    else{ 
+    count = num/2; 
+    ctr=1; 
+    } 
+    while(count) { 
+    dec+=(long long int)(pow(2,ctr)); 
+    ctr+=2; 
+    count--; 
+    } 
+    printf("%lld",dec); 
+    } 
+     
+   Input : 5 
+    
+   Output : 21 
+   
+   Explanation : (10101)5 is odd so count = (5/2)+1 = 3(1's) and ctr=0 
+   dec = 21 
+    
+    
 ## DC - 01-01-2020 (Sum of odd digit numbers) 
     #include<stdio.h>  
     #include<math.h>
