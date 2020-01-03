@@ -1,5 +1,9 @@
 ## Daily Challenges 
-## DC - 03-01-2020 (SQL Query)
+## DC - 03-01-2020 (SQL Query)  
+Table donor: 
+
+CREATE TABLE donor(id INT,name VARCHAR(20),bloodgroup VARCHAR(3));
+
 (select the id,name and bloodgroup which is not AB+ order by name ascending) 
 
     select id,name,bloodgroup from donor where bloodgroup!='AB+'order by name asc; 
