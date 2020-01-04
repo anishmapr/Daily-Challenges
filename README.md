@@ -1,4 +1,23 @@
-## Daily Challenges 
+## Daily Challenges. 
+## DC - 04-01-2020 (Sum of digits in Octal representation) 
+     #include<stdio.h> 
+     int main() { 
+     int num,sum=0; 
+     scanf("%d",&num); 
+     while(num!='\0'){ 
+     sum+=(num%8); 
+     num/=8; 
+     } 
+     printf("%d",sum); 
+     } 
+      
+   Input : 12 
+   
+   Output : 5. 
+   
+   Explanation : octal of 12 is 14 sum of digits is 1+4=5;
+   
+   
 ## DC - 03-01-2020 (SQL Query)  
 Table donor: 
 
