@@ -15,7 +15,7 @@
             }
         }
     }
-    printf("/%d",sum); }
+    printf("%d",sum); }
    
 Input :
 
