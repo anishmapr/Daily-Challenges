@@ -1,4 +1,38 @@
 ## Daily Challenges. 
+## DC - 05-02-2020 (Sum of bottom right quad elements in matrix)
+    #include<stdio.h>
+    #include <stdlib.h>
+    int main() {
+    int m,n;
+    scanf("%d %d",&m,&n);
+    int a[m][n],sum=0;
+    for(int i=0;i<m;i++) {
+        for(int j=0;j<n;j++) {
+            scanf("%d",&a[i][j]);
+            if(j>=n/2 && i>=m/2)
+            {
+                sum+=a[i][j];
+            }
+        }
+    }
+    printf("/%d",sum); }
+   
+Input :
+
+    4 4
+	
+    1 2 3 4
+
+    2 3 4 1
+
+    3 4 1 2
+
+    4 1 2 3
+	
+Output : 8 
+
+Explanation : Sum of bottom right quad is 1+2+2+3 = 8
+       
 ## DC - 04-01-2020 (Sum of digits in Octal representation) 
      #include<stdio.h> 
      int main() { 
