@@ -1,4 +1,35 @@
-## Daily Challenges. 
+## Daily Challenges.  
+## DC - 06-02-2020 (Larger with * symbol) 
+    #include<stdio.h>   
+    #include<string.h>
+    void function(String str) { 
+    int len=strlen(str); 
+    int A=0,D=0; 
+    for(int index=0;index<len;index++){ 
+    if(isalpha(str[index]) 
+        A++; 
+    if(isdigit(str[index]) 
+        D++; 
+    } 
+    for(int index=0;index<len;index++){ 
+    if(A>D && isalpha(str[index])) 
+         str[index]='*'; 
+    if(D>A && isdigit(str[index]) 
+         str[index]='*';  
+    }
+    int main() { 
+    char str[1000]; 
+    function(str); 
+    printf("%s",str); 
+    }
+   Input : cratmate123 
+     
+   Output : ********123 
+    
+   Explanation :  A-alphabets ; D-digits 
+   
+   A>D so all alphabets are given * symbol 
+   
 ## DC - 05-02-2020 (Sum of bottom right quad elements in matrix)
     #include<stdio.h>
     #include <stdlib.h>
