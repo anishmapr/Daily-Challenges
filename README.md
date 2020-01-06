@@ -1,24 +1,28 @@
 ## Daily Challenges.  
 ## DC - 06-02-2020 (Hidepassword) 
     #include<stdio.h>   
+    #include<stdlib.h>
     #include<string.h>
-    void hidePassword(String str) { 
+    #include<ctype.h>
+    void hidePassword(char str[]){ 
     int len=strlen(str); 
     int A=0,D=0; 
     for(int index=0;index<len;index++){ 
-    if(isalpha(str[index]) 
+    if(isalpha(str[index]))
         A++; 
-    if(isdigit(str[index]) 
+    if(isdigit(str[index]))
         D++; 
     } 
     for(int index=0;index<len;index++){ 
     if(A>D && isalpha(str[index])) 
          str[index]='*'; 
-    if(D>A && isdigit(str[index]) 
+    if(D>A && isdigit(str[index]))
          str[index]='*';  
+    }
     }
     int main() { 
     char str[1000]; 
+    scanf("%s",str);
     hidePassword(str); 
     printf("%s",str); 
     } 
