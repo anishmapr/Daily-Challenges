@@ -1,8 +1,8 @@
 ## Daily Challenges.  
-## DC - 06-02-2020 (Larger with * symbol) 
+## DC - 06-02-2020 (Hidepassword) 
     #include<stdio.h>   
     #include<string.h>
-    void function(String str) { 
+    void hidePassword(String str) { 
     int len=strlen(str); 
     int A=0,D=0; 
     for(int index=0;index<len;index++){ 
@@ -19,7 +19,7 @@
     }
     int main() { 
     char str[1000]; 
-    function(str); 
+    hidePassword(str); 
     printf("%s",str); 
     } 
     
