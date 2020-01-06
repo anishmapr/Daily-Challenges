@@ -21,7 +21,8 @@
     char str[1000]; 
     function(str); 
     printf("%s",str); 
-    }
+    } 
+    
    Input : cratmate123 
      
    Output : ********123 
