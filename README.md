@@ -23,13 +23,19 @@
     printf("%s",str); 
     } 
     
-   Input : cratmate123 
-     
-   Output : ********123 
-    
-   Explanation :  A-alphabets ; D-digits 
+   Input :   
    
-   A>D so all alphabets are given * symbol 
+    cratmate123 
+     
+   Output :   
+   
+    ********123 
+    
+   Explanation :  
+   
+       A-alphabets ; D-digits 
+   
+       A>D so all alphabets are given * symbol 
    
 ## DC - 05-02-2020 (Sum of bottom right quad elements in matrix)
     #include<stdio.h>
