@@ -1,4 +1,45 @@
-## Daily Challenges.  
+## Daily Challenges.   
+## DC - 07-02-2020 (Convert c to python)  
+  C code 
+  
+    #include<stdio.h> 
+    
+    #include<stdlib.h>  
+    
+    int main(){  
+    
+    int N;  
+    
+    scanf("%i",&N);  
+    
+    printf("%i",N);  
+    
+    } 
+     
+  Python. 
+  
+    N=input();  
+    
+    if(N[0]=='0' and N[1]=='x' or N[1]=='X'): 
+    
+         print(int(N,16));  
+	 
+    elif(N[0]=='0'): 
+    
+	  print(int(N,8));
+	  
+    else: 
+    
+	  print(N); 
+		  
+   Input : 012
+   
+   Output : 10 
+    
+   Explanation : 
+    
+   %i will input any number representation like octal decimal hexadecimal and print it in decimal
+	 
 ## DC - 06-02-2020 (Hidepassword) 
     #include<stdio.h>   
     #include<stdlib.h>
