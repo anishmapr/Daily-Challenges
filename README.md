@@ -1,4 +1,14 @@
-## Daily Challenges.   
+## Daily Challenges... 
+## DC - 08-02-2020 (SQL Query-Select) 
+   Table bus is given select id and busregnum
+   where ac is false sleeper and seater is tru,id should be ordered in asc.
+     
+      create table bus(id int,busregistrationnum varchar[20],ac boolean,sleeper boolean,seater boolean);
+     
+   Sql Query : 
+   
+      select id,busregistrationnum from bus where not ac,sleeper,seater order by id asc; 
+   
 ## DC - 07-02-2020 (Convert c to python)  
   C code :
   
