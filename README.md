@@ -3,34 +3,22 @@
   C code 
   
     #include<stdio.h> 
-    
     #include<stdlib.h>  
-    
     int main(){  
-    
     int N;  
-    
     scanf("%i",&N);  
-    
-    printf("%i",N);  
-    
+    printf("%i",N);
     } 
      
-  Python. 
+  Python
   
     N=input();  
-    
     if(N[0]=='0' and N[1]=='x' or N[1]=='X'): 
-    
-         print(int(N,16));  
-	 
+        print(int(N,16));    
     elif(N[0]=='0'): 
-    
-	  print(int(N,8));
-	  
+        print(int(N,8));  
     else: 
-    
-	  print(N); 
+        print(N); 
 		  
    Input : 012
    
