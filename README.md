@@ -1,6 +1,6 @@
 ## Daily Challenges.   
 ## DC - 07-02-2020 (Convert c to python)  
-  C code 
+  C code :
   
     #include<stdio.h> 
     #include<stdlib.h>  
@@ -10,7 +10,7 @@
     printf("%i",N);
     } 
      
-  Python
+  Python :
   
     N=input();  
     if(N[0]=='0' and N[1]=='x' or N[1]=='X'): 
@@ -26,7 +26,9 @@
     
    Explanation : 
     
-   %i will input any number representation like octal decimal hexadecimal and print it in decimal
+    * %i will input integers of octal decimal hexadecimal or binary type and print it in decimal type
+    * To input integer of octal type 0 is preceeded ex:012
+    * To input integer of hexadecimal type 0X or 0x is preceeded ex:0x12
 	 
 ## DC - 06-02-2020 (Hidepassword) 
     #include<stdio.h>   
