@@ -7,7 +7,7 @@
      
    Sql Query : 
    
-      select id,busregistrationnum from bus where not ac,sleeper,seater order by id asc; 
+      select id,busregistrationnum from bus where not ac and sleeper and seater order by id asc; 
    
 ## DC - 07-02-2020 (Convert c to python)  
   C code :
