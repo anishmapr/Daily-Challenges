@@ -1,4 +1,40 @@
 ## Daily Challenges... 
+## DC - 09-02-2020 (Integers with same digits)
+    #include<stdio.h>
+    #include<string.h>
+    int main(){
+    int num,x=0;
+    char str[100000000];
+    scanf("%d",&num);
+    for(int i=0;i<num;i++){
+    scanf("%s",str);
+    int len=strlen(str);
+    int flag=0;
+    char c=str[0];
+    for(int i=0;i<len;i++){
+    if(c!=str[i]){
+    flag=1;
+    break;
+    }}
+    if(flag==0){
+    printf("%s",str);
+    }}
+    if(x==0){
+    printf("-1");
+    }}
+   
+  Input :
+      
+      5
+      
+      85 234 222 55555 65
+      
+  Output :
+      
+      222 55555
+   
+   
+   
 ## DC - 08-02-2020 (SQL Query-Select) 
    Table bus is given select id and busregnum
    where ac is false sleeper and seater is tru,id should be ordered in asc.
