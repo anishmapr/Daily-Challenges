@@ -1,4 +1,5 @@
 ## Daily Challenges... 
+
 ## DC - 09-02-2020 (Integers with same digits)
     #include<stdio.h>
     #include<string.h>
@@ -17,6 +18,7 @@
     break;
     }}
     if(flag==0){
+    x=1;
     printf("%s",str);
     }}
     if(x==0){
@@ -25,15 +27,17 @@
    
   Input :
       
-      5
+    5
       
-      85 234 222 55555 65
+    85 234 222 55555 65
       
   Output :
       
-      222 55555
+    222 55555
    
-   
+  Explanation : 
+  
+    Inputting the array integers as string and comparing first char is equal to all other characters if yes then print
    
 ## DC - 08-02-2020 (SQL Query-Select) 
    Table bus is given select id and busregnum
