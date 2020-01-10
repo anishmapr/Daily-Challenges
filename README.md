@@ -1,5 +1,24 @@
 ## Daily Challenges... 
-
+## DC - 10-02-2020 (Rotate clockwise and print largest)
+    #include<stdio.h>
+    int main(){
+    int num;
+    scanf("%d",&num);
+    int c=(int)(log10(num)+1);
+    int power=pow(10,c-1);
+    long int max=num;
+    for(int i=0;i<c;i++){
+    int f=num/power;
+    long int r=(num*10)+f;
+    long int z=r-(f*power*10);
+    if(z>max){
+    max=z;
+    }
+    num=z;
+    }
+    printf("%ld",max);
+    }
+    
 ## DC - 09-02-2020 (Integers with same digits)
     #include<stdio.h>
     #include<string.h>
