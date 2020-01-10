@@ -19,9 +19,9 @@
     printf("%ld",max);
     }
     
-    Input : 2451
+   Input : 2451
     
-    Output : 5124
+   Output : 5124
     
 ## DC - 09-02-2020 (Integers with same digits)
     #include<stdio.h>
