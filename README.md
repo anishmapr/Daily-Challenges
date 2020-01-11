@@ -1,7 +1,7 @@
 ## Daily Challenges... 
 ## DC - 11-02-2020 (Free sweets exceed x kg)
     #include<stdio.h>
-    #include <stdlib.h>5
+    #include <stdlib.h>
     int main(){
     int n,x,y,sum=0,m;
     scanf("%d %d %d",&n,&x,&y);
