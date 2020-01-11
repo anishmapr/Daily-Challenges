@@ -1,4 +1,34 @@
 ## Daily Challenges... 
+## DC - 11-02-2020 (Free sweets exceed x kg)
+    #include<stdio.h>
+    #include <stdlib.h>5
+    int main(){
+    int n,x,y,sum=0,m;
+    scanf("%d %d %d",&n,&x,&y);
+    for(int i=0;i<n;i++){
+        scanf("%d",&m);
+        if(m>x){
+            m+=y;
+        }
+        sum+=m;
+    }
+    printf("%d",sum);
+}
+
+Input : 
+   
+    5 10 4
+    6 10 13 20 3
+    
+Output : 60
+
+Explanation : 
+
+    13>10-> 13+4=17
+    20>10-> 20+4=24
+    total weight = 6+10+17+24+3 = 60kg
+       
+    
 ## DC - 10-02-2020 (Rotate clockwise and print largest)
     #include<stdio.h>
     int main(){
