@@ -1,4 +1,37 @@
 ## Daily Challenges... 
+## DC - 12-02-2020 (Column increment/decrement pattern)
+    #include<stdio.h>
+    #include <stdlib.h>
+    int main(){
+    int num,k=1;
+    scanf("%d",&num);
+    int arr[num][num];
+    for(int col=0;col<num;col++){
+    for(int row=col;row<num;row++){
+    arr[row][col]=k;
+    col%2?--k:k++;
+    }
+    col%2?k=1:k=num;
+    }
+    for(int row=0;row<num;row++){
+    for(int col=0;col<=row;col++){
+    printf("%d ",arr[row][col]);
+    }
+    printf("\n");
+    }
+    }
+    
+   Input : 5
+   
+   Output :
+        
+    1
+    2 5
+    3 4 1
+    4 3 2 5
+    5 2 3 4 1
+	
+	
 ## DC - 11-02-2020 (Free sweets exceed x kg)
     #include<stdio.h>
     #include <stdlib.h>
@@ -13,7 +46,7 @@
         sum+=m;
     }
     printf("%d",sum);
-}
+    }
 
 Input : 
    
