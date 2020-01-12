@@ -11,7 +11,10 @@
     arr[row][col]=k;
     col%2?--k:k++;
     }
-    col%2?k=1:k=num;
+    if(col%2)
+        k=1;
+    else
+        k=num;
     }
     for(int row=0;row<num;row++){
     for(int col=0;col<=row;col++){
