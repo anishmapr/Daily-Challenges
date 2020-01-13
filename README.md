@@ -1,4 +1,22 @@
 ## Daily Challenges... 
+## DC - 13-02-2020 (Flowchart -> Code)
+    #include<stdio.h>
+    #include <stdlib.h>
+    int main() {
+    int x,y;
+    scanf("%d %d",&x,&y);
+    int ctr1=1,ctr2=y;
+    while(ctr1<=x || ctr2>=1) {
+        if(ctr1<=x) {
+            printf("%d ",ctr1);
+            ctr1++;
+        }
+        if(ctr2>=1) {
+            printf("%d ",ctr2);
+            ctr2--;
+        }
+    }}
+
 ## DC - 12-02-2020 (Column increment/decrement pattern)
     #include<stdio.h>
     #include <stdlib.h>
