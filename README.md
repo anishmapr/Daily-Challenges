@@ -1,4 +1,35 @@
 ## Daily Challenges... 
+## DC - 14-02-2020 (getStringfromInteger) 
+    #include<stdio.h>
+    #include<stdlib.h>
+    char* getStringfromInteger(int num){
+    int k=0;
+    char s[1000],c='a';
+    while(num>0){
+    s[k]=c++;
+    printf("%c",s[k]);
+    if(c=='d'){
+    c='a';
+    }
+    k++;
+    num--;
+    }
+    return s;
+    }
+    int main(){
+    int num;
+    scanf("%d",&num);
+    char str[1000];
+    str=getStringfromInteger(n);
+    printf("%s",str);
+    free(str);
+    }
+    
+   Input : 5
+   
+   Output : abcab
+   
+   
 ## DC - 13-02-2020 (Flowchart -> Code)
     #include<stdio.h>
     #include <stdlib.h>
