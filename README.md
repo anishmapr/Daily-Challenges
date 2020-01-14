@@ -4,25 +4,25 @@
     #include<stdlib.h>
     char* getStringfromInteger(int num){
     int k=0;
-    char s[1000],c='a';
+    char *str=malloc(sizeof(char)),c='a';
     while(num>0){
-    s[k]=c++;
-    printf("%c",s[k]);
+    str[k]=c++;
     if(c=='d'){
     c='a';
     }
     k++;
     num--;
     }
-    return s;
+    str[k]='\0';
+    return str;
     }
     int main(){
     int num;
     scanf("%d",&num);
-    char str[1000];
-    str=getStringfromInteger(n);
-    printf("%s",str);
+    char *str=getStringfromInteger(num);
+    printf(str);
     free(str);
+    return 0;
     }
     
    Input : 5
