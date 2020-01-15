@@ -1,4 +1,14 @@
 ## Daily Challenges...  
+## DC - 16-02-2020 (SQL Select Query)
+ TABLE EVENT:
+ 
+    create table event(id int,title varchar[100],type varchar[10],attendeescount int,active boolean);
+    
+ Select Query:
+ 
+    select id,title,attendeescount from table where active=true and type='TECH' and attendeescount>50
+    order by id asc;
+    
 ## DC - 15-02-2020 (Toogle char in string) 
     #include<stdio.h> 
     #include<string.h>
