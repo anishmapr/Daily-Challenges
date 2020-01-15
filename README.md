@@ -5,7 +5,7 @@
     char s1[1000],s2[1000]; 
     scanf("%s\n%s",s1,s2); 
     for(int i=0;i<strlen(s1);i++) { 
-    if(tolower(s2[i]=='u'){ 
+    if(tolower(s2[i])=='u'){ 
     printf("%c",toupper(s1[i]); 
     } 
     else{ 
@@ -13,7 +13,14 @@
     } 
     } 
     } 
+  Input: 
+  
+    cRaTMatE 
+    ulULuLuL
+       
+   Output: 
      
+     CrAtMaTe
    
 ## DC - 14-02-2020 (getStringfromInteger) 
     #include<stdio.h>
