@@ -1,15 +1,17 @@
 ## Daily Challenges...  
 ## DC - 15-02-2020 (Toogle char in string) 
     #include<stdio.h> 
+    #include<string.h>
+    #include<ctype.h>
     int main(){ 
     char s1[1000],s2[1000]; 
     scanf("%s\n%s",s1,s2); 
     for(int i=0;i<strlen(s1);i++) { 
     if(tolower(s2[i])=='u'){ 
-    printf("%c",toupper(s1[i]); 
+    printf("%c",toupper(s1[i])); 
     } 
     else{ 
-    printf("%c",tolower(s1[i]); 
+    printf("%c",tolower(s1[i])); 
     } 
     } 
     }  
