@@ -12,7 +12,8 @@
     printf("%c",tolower(s1[i]); 
     } 
     } 
-    } 
+    }  
+    
   Input: 
   
     cRaTMatE 
@@ -20,7 +21,12 @@
        
    Output: 
      
-     CrAtMaTe
+     CrAtMaTe 
+      
+   Explanation : 
+    
+    if s2 char has u or U toogle s1 char to uppercase 
+    if s2 char has l or L toogle s1 char to lowercase
    
 ## DC - 14-02-2020 (getStringfromInteger) 
     #include<stdio.h>
