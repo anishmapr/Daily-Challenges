@@ -1,4 +1,44 @@
-## Daily Challenges...  
+## Daily Challenges...
+## DC -18-01-2020 (Sum of integers ending with x)
+    import java.util.*;
+    public class Hello {
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		String x=sc.next();
+		int l=x.length();
+		int sum=0,f=0;
+		for(int i=0;i<n;i++)
+		{
+		    String s=sc.next();
+		    int len=s.length();
+		    int a=len-1,c=0;
+		    for(int j=l-1;j>=0 && len>l;j--)
+		    {
+		        if(s.charAt(a)==x.charAt(j))
+		        {
+		            c++;
+		        }
+		        a--;
+		    }
+		    if(c==l)
+		    {
+		        sum+=Integer.parseInt(s);
+		    }
+		}
+		System.out.print(sum);
+	}
+    }
+    
+  Input :
+     
+      4 40
+      140 230 540 100
+      
+  Output : 680
+  
+  Explanation : The integers ending with 40 is 140 and 540 so the sum = 140+540 = 680
+	  
 ## DC -17-01-2020 (Find side of Rectangle)
     #include<stdio.h>
     #include<stdlib.h>
