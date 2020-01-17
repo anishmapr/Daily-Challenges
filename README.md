@@ -1,5 +1,25 @@
 ## Daily Challenges...  
-## DC - 16-02-2020 (SQL Select Query)
+## DC -17-01-2020 (Find side of Rectangle)
+    #include<stdio.h>
+    #include<stdlib.h>
+    int main(){
+    long int length,peri;
+    scanf("%ld %ld",&length,&peri);
+    double breadth=(peri/2.0)-length;
+    printf("0.2lf",breadth);
+    }
+    
+   Input : 4 12
+   
+   Output : 6
+   
+   Explanation:
+   
+     Perimeter = 2*(length+breadth)
+     breadth = (perimeter/2)-length
+     
+     
+## DC - 16-01-2020 (SQL Select Query)
  TABLE EVENT:
  
     create table event(id int,title varchar[100],type varchar[10],attendeescount int,active boolean);
@@ -9,7 +29,7 @@
     select id,title,attendeescount from table where active=true and type='TECH' and attendeescount>50
     order by id asc;
     
-## DC - 15-02-2020 (Toogle char in string) 
+## DC - 15-01-2020 (Toogle char in string) 
     #include<stdio.h> 
     #include<string.h>
     #include<ctype.h>
@@ -40,7 +60,7 @@
     if s2 char has u or U toogle s1 char to uppercase 
     if s2 char has l or L toogle s1 char to lowercase
    
-## DC - 14-02-2020 (getStringfromInteger) 
+## DC - 14-01-2020 (getStringfromInteger) 
     #include<stdio.h>
     #include<stdlib.h>
     char* getStringfromInteger(int num){
@@ -71,7 +91,7 @@
    Output : abcab
    
    
-## DC - 13-02-2020 (Flowchart -> Code)
+## DC - 13-01-2020 (Flowchart -> Code)
     #include<stdio.h>
     #include <stdlib.h>
     int main() {
@@ -89,7 +109,7 @@
         }
     }}
 
-## DC - 12-02-2020 (Column increment/decrement pattern)
+## DC - 12-01-2020 (Column increment/decrement pattern)
     #include<stdio.h>
     #include <stdlib.h>
     int main(){
@@ -125,7 +145,7 @@
     5 2 3 4 1
 	
 	
-## DC - 11-02-2020 (Free sweets exceed x kg)
+## DC - 11-01-2020 (Free sweets exceed x kg)
     #include<stdio.h>
     #include <stdlib.h>
     int main(){
@@ -155,7 +175,7 @@ Explanation :
     total weight = 6+10+17+24+3 = 60kg
        
     
-## DC - 10-02-2020 (Rotate clockwise and print largest)
+## DC - 10-01-2020 (Rotate clockwise and print largest)
     #include<stdio.h>
     int main(){
     int num;
@@ -187,7 +207,7 @@ Explanation :
     num = 5124*10 = 51240+5 = 51245-(5*1000*10) = 51245-50000 = 1245 < max => max = 5124
     num = 1245*10 = 12450+1 = 12451-(1*1000*10) = 12451-10000 = 2451 < max => ( max = 5124 )
     
-## DC - 09-02-2020 (Integers with same digits)
+## DC - 09-01-2020 (Integers with same digits)
     #include<stdio.h>
     #include<string.h>
     int main(){
@@ -226,7 +246,7 @@ Explanation :
   
     Inputting the array integers as string and comparing first char is equal to all other characters if yes then print
    
-## DC - 08-02-2020 (SQL Query-Select) 
+## DC - 08-01-2020 (SQL Query-Select) 
    Table bus is given select id and busregnum
    where ac is false sleeper and seater is tru,id should be ordered in asc.
      
@@ -236,7 +256,7 @@ Explanation :
    
       select id,busregistrationnum from bus where not ac and sleeper and seater order by id asc; 
    
-## DC - 07-02-2020 (Convert c to python)  
+## DC - 07-01-2020 (Convert c to python)  
   C code :
   
     #include<stdio.h> 
@@ -267,7 +287,7 @@ Explanation :
     * To input integer of octal type 0 is preceeded ex:012
     * To input integer of hexadecimal type 0X or 0x is preceeded ex:0x12
 	 
-## DC - 06-02-2020 (Hidepassword) 
+## DC - 06-01-2020 (Hidepassword) 
     #include<stdio.h>   
     #include<stdlib.h>
     #include<string.h>
@@ -309,7 +329,7 @@ Explanation :
    
        A>D so all alphabets are given * symbol 
    
-## DC - 05-02-2020 (Sum of bottom right quad elements in matrix)
+## DC - 05-01-2020 (Sum of bottom right quad elements in matrix)
     #include<stdio.h>
     #include <stdlib.h>
     int main() {
