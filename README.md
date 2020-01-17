@@ -6,12 +6,12 @@
     long int length,peri;
     scanf("%ld %ld",&length,&peri);
     double breadth=(peri/2.0)-length;
-    printf("0.2lf",breadth);
+    printf("%0.2lf",breadth);
     }
     
    Input : 4 12
    
-   Output : 6
+   Output : 2.00
    
    Explanation:
    
