@@ -1,5 +1,38 @@
 ## Daily Challenges...
-## DC -18-01-2020 (Sum of integers ending with x)
+## DC - 19-01-2020 (double even and quad odd)
+    #include<stdio.h>
+    #include<stdlib.h>
+    int main(){
+        int len,num,sum=0;
+        scanf("%d",&len);
+        for(int index=0;index<len;index++)
+	    {
+            scanf("%d",&num);
+            if(num%2==0)
+                sum+=(num*2);
+            else
+                sum+=(num*4);
+        }
+        printf("%d",sum);
+    }
+    
+   Input :
+   
+    4
+    5 2 8 7
+    
+   Output : 68
+   
+   Explanation : 
+   
+    odd  - 5*4=20
+    even - 2*2=4
+    even - 8*2=16
+    odd  - 7*4=28
+    sum = 68
+   
+   
+## DC - 18-01-2020 (Sum of integers ending with x)
     import java.util.*;
     public class Hello {
     public static void main(String[] args) {
