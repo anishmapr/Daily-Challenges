@@ -1,4 +1,13 @@
-## Daily Challenges...
+## Daily Challenges... 
+## DC - 20-01-2020 (SQL select Query)  
+  Table user: 
+    
+    create table user(id INT,name VARCHAR(10),role VARCHAR(10)); 
+      
+  Query: 
+  
+    select id,role,name from user order by role,id desc; 
+    
 ## DC - 19-01-2020 (double even and quad odd)
     #include<stdio.h>
     #include<stdlib.h>
