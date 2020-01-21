@@ -1,4 +1,34 @@
-## Daily Challenges... 
+## Daily Challenges...  
+## DC - 21-01-2020 (N odd/even numbers) 
+    int *getOddEvenNum(int N) { 
+    int *a=malloc(N*size(int));  
+    int c=0,k=0,i=1;
+    if(N&1) { 
+        while(c<=N) { 
+            if(i&1) { 
+            a[k++]=i;
+            c++; 
+            } 
+            i++; 
+        } 
+    } 
+    else{ 
+        while(c<=N){ 
+            if(i&1==0) { 
+            a[k++]=i; 
+            c++; 
+            }
+            i++; 
+         } 
+    }  
+    return a; 
+    } 
+     
+   Input : 5 
+    
+   Output : 1 3 5 7 9 
+    
+   Explanation : 5 is odd so first five odd numbers are printed
 ## DC - 20-01-2020 (SQL select Query)  
   Table user: 
     
