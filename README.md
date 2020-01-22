@@ -1,5 +1,5 @@
 ## Daily Challenges...  
-## DC - 22-01-2020 (Python to C)
+## DC - 22-01-2020 (Python to C conversion)
   Python code : 
   
     N=int(input())
@@ -10,6 +10,7 @@
   C code:
   
     #include<stdio.h>
+    
     int binary(int num) {
     int count = 0;
     while(num!=0) {
@@ -19,15 +20,16 @@
     }
     return count;
     }
+    
     int main(){
     int n;
     scanf("%d",&n);
     int a[n],c[n];
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){  
         scanf("%d",&a[i]);
         c[i]=binary(a[i]);
     }
-    for(int i=0;i<n-1;i++){
+    for(int i=0;i<n-1;i++){      
        for(int j=i+1;j<n;j++){
            if(c[i]>c[j]){
                int t=c[i];
@@ -36,7 +38,7 @@
            }
        }
     }
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){          
         for(int j=0;j<n;j++){
             if(c[i]==binary(a[j]))
             {
