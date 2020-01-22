@@ -1,4 +1,61 @@
 ## Daily Challenges...  
+## DC - 22-01-2020 (Python to C)
+  Python code : 
+  
+    N=int(input())
+    numlist=list(map(int,input().split()))
+    numlist=sorted(numlist,key=lambda num:bin(num).count("1"))
+    print(*numlist)
+    
+  C code:
+  
+    #include<stdio.h>
+    int binary(int num) {
+    int count = 0;
+    while(num!=0) {
+    if((num % 2)==1)
+        count ++;
+    num /= 2;
+    }
+    return count;
+    }
+    int main(){
+    int n;
+    scanf("%d",&n);
+    int a[n],c[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+        c[i]=binary(a[i]);
+    }
+    for(int i=0;i<n-1;i++){
+       for(int j=i+1;j<n;j++){
+           if(c[i]>c[j]){
+               int t=c[i];
+               c[i]=c[j];
+               c[j]=t;
+           }
+       }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            if(c[i]==binary(a[j]))
+            {
+                printf("%d ",a[j]);
+                a[j]=0;
+            }
+        }
+    }
+    }
+    
+   Input : 
+    
+     5
+     7 2 5 9 4
+     
+   Output : 2 4 5 9 7
+   
+   Explanation : Sorting based on the number of ones in its binary form
+	   
 ## DC - 21-01-2020 (N odd/even numbers) 
     int *getOddEvenNum(int N) { 
     int *a=malloc(N*size(int));  
