@@ -1,6 +1,33 @@
 ## Daily Challenges...  
+## DC - 23-01-2020 (C to Python conversion)
+
+  C code:
+  
+    #include<stdio.h>
+    int main {
+    int x,y;
+    scanf("%d%d",&x,&y);
+    char floatval[11];
+    sprintf(floatval,"%d.%d",x,y);
+    double val;
+    sscanf(floatval,"%lf",&val);
+    printf("%.2lf",val);
+    }
+    
+   Python code : 
+  
+    x,y=input().split();
+    printf('%.2f'%float(x+"."+y))
+    
+   Explanation : 
+   
+    Rounding of numbers upto two decimal places 
+    x = 253 
+    y = 2143 
+    output = 253.21
+    
 ## DC - 22-01-2020 (Python to C conversion)
-  Python code : 
+  Python code :
   
     N=int(input())
     numlist=list(map(int,input().split()))
