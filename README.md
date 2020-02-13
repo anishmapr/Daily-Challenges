@@ -1,4 +1,16 @@
-## Daily Challenges...  
+## Daily Challenges...   
+## DC - 13-02-2020 (getintgerfromunitdigit)  
+    #include<stdio.h>
+    int getintegerfromunitdigit(int N) { 
+    int exit; 
+    int unit = N%10,num = 0; 
+    int count=log10(N)+1; 
+    for(int i=0;i<count;i++) 
+        num=(num*10)+unit; 
+    return num; 
+    }
+
+
 ## DC - 23-01-2020 (C to Python conversion)
 
   C code:
