@@ -1,4 +1,24 @@
-## Daily Challenges...   
+## Daily Challenges...
+
+## DC - 12-05-2020 (Product Sum of diagonals)  
+
+    #include<stdio.h>
+    int main(){
+    int N,sum1=0,sum2=0;
+    scanf("%d",&N);
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+    int num;
+    scanf("%d",&num);
+    if(i==j){
+    sum1+=num;
+    }
+    if(i+j==N-1){
+    sum2+=num;
+    }}}
+    printf("%d",sum1*sum2);
+    }
+    
 ## DC - 13-02-2020 (getintgerfromunitdigit)  
     #include<stdio.h>
     int getintegerfromunitdigit(int N) { 
